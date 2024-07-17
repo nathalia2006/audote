@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFAE2;
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    height: 50px;
+  }
+
+header, footer {
+    background-color: #DED398; height: 7rem;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"],
+button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #DED398;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #DED398;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
