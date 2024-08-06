@@ -1,12 +1,13 @@
-let button = document.getElementById("handleSubmit");
+async function handleSubmit(event) {
+  event.preventDefault();
 
-button.onclick = async function() {
   let email      = document.getElementById("email").value;
   let senha      = document.getElementById("senha").value;
-  let description = document.getElementById("description").value;  
-  let data        = {email,senha}  
+  let data        = {email,senha};  
 
-  const response = await fetch('http://localhost:3000/api/loginController', {
+
+  console.log(data)
+  const response = await fetch('http://localhost:3005/api/login', {
     method: "POST",
     headers: {"Content-type": "application/json;charset=UTF-8"},
     body: JSON.stringify(data)
@@ -16,7 +17,10 @@ button.onclick = async function() {
     
   if(content.success) {
     alert("Senha correta")
+    console.log(response)
+    window.location.href = '../home/index.html';
   } else {
     alert('Senha incorreta');
+    console.log(response)
   }
 }

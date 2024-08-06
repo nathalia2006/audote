@@ -6,8 +6,7 @@ async function login(request, response) {
 
     const query = "SELECT email, senha FROM usuario WHERE email = ?";
 
-    connection.query(query, email, (err, results) => {
-        
+    connection.query(query, email, (err, results) => {        
         if(results.length> 0) {
             const password = request.body.senha;
             const passwordQuery = results[0].senha;
@@ -15,11 +14,11 @@ async function login(request, response) {
             console.log(password)
             console.log(passwordQuery)
 
-            if (password == passwordQuery) {
+            if (password === passwordQuery) {
                 response
                 .status(200)
                 .json({
-                    sucess: true,
+                    success: true,
                     message: "Sucesso",
                     data: results
                 })
@@ -27,7 +26,7 @@ async function login(request, response) {
                 response
                 .status(400)
                 .json({
-                    sucess: false,
+                    success: false,
                     message: "Senha incorreta"
                 })
             }
@@ -35,7 +34,7 @@ async function login(request, response) {
             response
                 .status(400)
                 .json({
-                    sucess: false,
+                    success: false,
                     message: "Sem sucesso!",
                     data: err
                 })
