@@ -42,15 +42,17 @@ body {
    
   button {
     background-color: #DED398;
-    color: #FFFAE2;
+    color: #fff;
     cursor: pointer;
   }
    
   button:hover {
-    background-color: #d8d16c;
+    background-color: #DED398;
   }
    
   footer {
-    background-color: #DED398; height: 7rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
   
