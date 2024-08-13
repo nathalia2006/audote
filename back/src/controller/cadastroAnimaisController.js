@@ -3,16 +3,16 @@ const connection = require('../config/db');
 async function storeCadastroAnimais(request, response) {
     // recuperar dados do form
     const params = Array(
-        request.body.name,
         request.body.email,
-        request.body.descrição_animal,
-        request.body.password,
-        request.body.foto_animal
+        request.body.senha,
+        request.body.descricao_animal,
+        request.file.filename
     );
     // comando no banco
-    const query = "INSERT INTO cadastro_animais(name,email,descrição_animal,password,foto_animal) VALUES(?,?,?,?,?)";
+    const query = "INSERT INTO cadastro_animais(email,senha,descricao_animal,foto_animal) VALUES(?,?,?,?)";
  
     connection.query(query, params, (err, results) => {
+        console.log(err,results)
         if (results) {
             response
                 .status(200)
