@@ -4,7 +4,7 @@ USE audote;
 
 -- Cadastro e login
 CREATE TABLE usuario(
-	id INT PRIMARY KEY,
+	id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
     senha VARCHAR(255) NOT NULL

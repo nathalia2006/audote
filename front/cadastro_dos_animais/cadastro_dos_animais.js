@@ -34,7 +34,7 @@ async function handleSubmit(event) {
     }
   } catch (error) {
     // Captura e exibe erros que ocorreram durante a requisição
-    console.error('Erro:', error);  // Imprime o erro no console para depuração
+    console.log(formData)
     alert('Ocorreu um erro ao enviar os dados!');  // Exibe uma mensagem genérica de erro para o usuário
   }
 }

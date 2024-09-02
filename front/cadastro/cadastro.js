@@ -26,7 +26,8 @@ async function handleSubmit(event) {
 
     // Verifica se a resposta indica sucesso
     if (content.success) {
-      alert("Senha cadastrada!"); // Exibe uma mensagem de sucesso
+      alert("Conta criada"); // Exibe uma mensagem de sucesso
+      window.location.href = '../login/login.html'
     } else {
       alert(); // Exibe uma mensagem de erro
       console.log(content.message); // Exibe a mensagem de erro no console para depuração

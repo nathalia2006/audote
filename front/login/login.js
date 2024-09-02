@@ -26,8 +26,10 @@ async function handleSubmit(event) {
 
   // Verifica se a resposta do servidor indica sucesso
   if (content.success) {
-    // Exibe a mensagem de sucesso primeiro
-    alert("Login realizado com sucesso!");  // Exibe uma mensagem de sucesso para o usuário
+    let account = content.data;
+    localStorage.setItem('@account_logged', JSON.stringify(account));
+    alert(content.message);
+    window.location.href = '../tela_inicial/tela_inicial.html';
   } else {
     alert("Erro. Verifique sua senha.");  // Exibe uma mensagem de erro para o usuário
     console.log(content.message);  // Exibe a mensagem de erro no console para depuração
