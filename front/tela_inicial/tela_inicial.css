@@ -1,0 +1,103 @@
+body {
+  background-image: url("fundo.png"); /* Define uma imagem de fundo para a página */
+  background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+  background-size: cover; /* Faz com que a imagem de fundo cubra toda a área visível */
+  margin: 0; /* Remove a margem padrão do corpo da página */
+  padding: 0; /* Remove o padding padrão do corpo da página */
+  font-family: Arial, sans-serif; /* Define a fonte padrão para o texto como Arial ou, se não disponível, uma fonte genérica sans-serif */
+}
+
+header {
+  background-color: #DED398; /* Define a cor de fundo do cabeçalho */
+  height: 7rem; /* Define a altura do cabeçalho */
+  display: flex; /* Usa o layout flexbox para organizar os itens dentro do cabeçalho */
+  align-items: center; /* Alinha verticalmente os itens no centro do cabeçalho */
+  padding: 0 20px; /* Define o padding interno do cabeçalho, com 20px à esquerda e à direita */
+  justify-content: space-between; /* Distribui o espaço igualmente entre o logotipo e o menu */
+}
+
+header img {
+  height: 50px; /* Define a altura da imagem do logotipo no cabeçalho */
+}
+
+nav ul {
+  list-style: none; /* Remove os marcadores da lista de navegação */
+  margin: 0; /* Remove a margem padrão da lista */
+  padding: 0; /* Remove o padding padrão da lista */
+  display: flex; /* Usa o layout flexbox para organizar os itens da lista */
+}
+
+nav li {
+  margin: 0 10px; /* Define a margem horizontal para os itens da lista de navegação */
+}
+
+nav a {
+  display: inline-block; /* Faz com que os links sejam exibidos como blocos em linha */
+  padding: 10px 20px; /* Adiciona padding interno aos links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #333; /* Define a cor do texto dos links */
+  font-weight: bold; /* Torna o texto dos links em negrito */
+  border: 2px solid transparent; /* Define uma borda transparente ao redor dos links */
+  border-radius: 5px; /* Adiciona bordas arredondadas aos links */
+  transition: all 0.3s ease; /* Adiciona uma transição suave para todas as propriedades do link ao serem alteradas */
+}
+
+nav a:hover {
+  background-color: #DED398; /* Define a cor de fundo dos links ao passar o mouse sobre eles */
+  color: #000; /* Define a cor do texto dos links ao passar o mouse sobre eles */
+  border-color: #333; /* Define a cor da borda dos links ao passar o mouse sobre eles */
+  transform: translateY(-3px); /* Move o link ligeiramente para cima ao passar o mouse sobre ele */
+}
+
+.foreground {
+  display: flex; /* Usa o layout flexbox para organizar o conteúdo dentro do div */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  margin-top: 50px; /* Adiciona uma margem superior de 50px */
+}
+
+#meio-image {
+  max-width: 80%; /* Define a largura máxima da imagem como 80% da largura do contêiner pai */
+  height: auto; /* Mantém a proporção da imagem ao ajustar a altura automaticamente */
+}
+
+.headline-container {
+  text-align: center; /* Centraliza o texto dentro do contêiner */
+  margin-top: 20px; /* Adiciona uma margem superior de 20px */
+}
+
+.headline-container h1 {
+  font-size: 3rem; /* Define o tamanho da fonte do título principal */
+  color: #000; /* Define a cor do texto do título principal */
+  font-weight: bold; /* Torna o texto do título principal em negrito */
+  margin: 0; /* Remove a margem padrão do título principal */
+  display: flex; /* Usa o layout flexbox para organizar o conteúdo dentro do título principal */
+  align-items: center; /* Alinha verticalmente o conteúdo do título principal ao centro */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente dentro do título principal */
+  background-color: #DED398; /* Define a cor de fundo do título principal */
+}
+
+#logo-frase {
+  height: 3rem; /* Define a altura da imagem incorporada ao título principal */
+  vertical-align: middle; /* Alinha verticalmente a imagem com o texto do título principal */
+  margin-left: 10px; /* Adiciona uma margem à esquerda da imagem para espaçamento */
+}
+
+.headline-container h2 {
+  font-size: 1.5rem; /* Define o tamanho da fonte dos subtítulos */
+  color: #000; /* Define a cor do texto dos subtítulos */
+  margin-top: 10px; /* Adiciona uma margem superior de 10px aos subtítulos */
+  background-color: #DED398; /* Define a cor de fundo dos subtítulos */
+}
+
+h1 {
+  height: 10.5vh; /* Define a altura do título principal como 10.5% da altura da viewport */
+}
+
+h2 {
+  height: 1.2vh; /* Define a altura dos subtítulos como 1.2% da altura da viewport */
+}
+
+.headline-container {
+  background-color: #DED398; /* Define a cor de fundo do contêiner de título */
+  height: 22.55vh; /* Define a altura do contêiner de título como 22.55% da altura da viewport */
+}

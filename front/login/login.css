@@ -1,55 +1,56 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #FFFAE2;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Define a fonte padrão da página como Arial ou uma fonte sans-serif se Arial não estiver disponível */
+    background-color: #FFFAE2; /* Define a cor de fundo da página */
+    margin: 0; /* Remove a margem padrão ao redor do corpo da página */
+    padding: 0; /* Remove o padding padrão ao redor do corpo da página */
 }
 
 header img {
-    height: 50px;
-  }
+    height: 50px; /* Define a altura da imagem no cabeçalho */
+}
 
 header, footer {
-    background-color: #DED398; height: 7rem;
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
+    background-color: #DED398; /* Define a cor de fundo para o cabeçalho e o rodapé */
+    height: 7rem; /* Define a altura do cabeçalho e do rodapé */
+    display: flex; /* Usa o layout flexbox para organizar o conteúdo do cabeçalho e do rodapé */
+    justify-content: flex-start; /* Alinha o conteúdo horizontalmente ao início do contêiner (esquerda) */
+    align-content: center; /* Alinha o conteúdo verticalmente ao centro do contêiner (não aplicável aqui, pois `align-items` é usado) */
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro do contêiner */
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+    width: 80%; /* Define a largura do contêiner principal como 80% da largura da página */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente na página */
+    padding: 20px; /* Adiciona um padding interno de 20px ao redor do contêiner */
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
+    display: block; /* Faz com que o rótulo ocupe toda a largura disponível */
+    margin-bottom: 5px; /* Adiciona uma margem inferior de 5px ao rótulo */
 }
 
 input[type="email"],
 input[type="password"],
 button {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 100%; /* Define a largura dos campos de entrada e do botão como 100% da largura do contêiner pai */
+    margin-bottom: 15px; /* Adiciona uma margem inferior de 15px para separar os elementos */
+    padding: 10px; /* Adiciona um padding interno de 10px aos campos de entrada e ao botão */
+    border: 1px solid #ccc; /* Define a borda dos campos de entrada e do botão como uma linha sólida de 1px com cor cinza claro */
+    border-radius: 5px; /* Adiciona bordas arredondadas de 5px aos campos de entrada e ao botão */
 }
 
 button {
-    background-color: #DED398;
-    color: #fff;
-    cursor: pointer;
+    background-color: #DED398; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão como branco */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
 }
 
 button:hover {
-    background-color: #DED398;
+    background-color: #DED398; /* Mantém a mesma cor de fundo ao passar o mouse sobre o botão (nenhuma mudança visual) */
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    position: fixed; /* Fixa o rodapé na parte inferior da página */
+    bottom: 0; /* Alinha o rodapé à parte inferior da página */
+    width: 100%; /* Define a largura do rodapé como 100% da largura da página */
 }

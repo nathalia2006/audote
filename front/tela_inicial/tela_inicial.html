@@ -1,12 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+
+<html lang="en"> <!-- Define o idioma do documento como inglês -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela inicial</title>
-    <link rel="stylesheet" href="tela_inicial.css">
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres para UTF-8, que suporta caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a viewport para garantir que a página seja responsiva em dispositivos móveis -->
+    <title>Tela Inicial</title> <!-- Define o título da página, exibido na aba do navegador -->
+    <link rel="stylesheet" href="tela_inicial.css"> <!-- Link para o arquivo de estilo CSS externo -->
 </head>
 <body>
+
+    <header>
+        <img src="logo.png" alt="logotipo"> <!-- Imagem do logotipo do site -->
+        
+        <nav>
+            <ul>
+                <!-- Menu de navegação com links para diferentes páginas -->
+                <li><a href="../cadastro_dos_animais/cadastro_dos_animais.html">Postar</a></li>
+                <li><a href="../animais_disponíveis/animais_disponíveis.html">Animais</a></li>
+                <li><a href="../login/login.html">Login</a></li>
+                <li><a href="../cadastro/cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="foreground">
+        <img src="meio.png" alt="Foreground image" id="meio-image"> <!-- Imagem de primeiro plano, possivelmente decorativa -->
+    </div>
     
+    <div class="headline-container">
+        <!-- Contêiner para os títulos principais da página -->
+        <h1>NÃO COMPRE, <img src="logo.png" alt="AuDOTE logo" id="logo-frase"></h1> <!-- Título principal com imagem incorporada -->
+        <h2>Quando você adota, você não só muda a vida deles,</h2> <!-- Subtítulo -->
+        <h2>mas eles também mudam a sua.</h2> <!-- Outro subtítulo -->
+    </div>
+
 </body>
 </html>

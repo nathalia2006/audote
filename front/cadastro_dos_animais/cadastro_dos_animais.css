@@ -1,58 +1,58 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #FFFAE2;
-    margin: 0;
-    padding: 0;
-  }
-   
-  header, footer {
-    background-color: #DED398; height: 7rem;
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-  }
-   
-  header img {
-    height: 50px;
-  }
-   
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-  }
-   
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-   
-  input[type="email"],
-  input[type="password"],
-  textarea,
-  input[type="file"],
-  button {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-   
-  button {
-    background-color: #DED398;
-    color: #fff;
-    cursor: pointer;
-  }
-   
-  button:hover {
-    background-color: #DED398;
-  }
-   
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
+  font-family: Arial, sans-serif; /* Define a fonte padrão da página como Arial, com uma fonte alternativa sans-serif caso Arial não esteja disponível */
+  background-color: #FFFAE2; /* Define a cor de fundo da página como um tom claro de creme */
+  margin: 0; /* Remove a margem padrão ao redor do corpo da página */
+  padding: 0; /* Remove o preenchimento padrão ao redor do corpo da página */
+}
+
+header, footer {
+  background-color: #DED398; /* Define a cor de fundo do cabeçalho e rodapé como um tom de bege claro */
+  height: 7rem; /* Define a altura do cabeçalho e rodapé como 7 rem (uma unidade relativa ao tamanho da fonte) */
+  display: flex; /* Usa o layout flexível para alinhar os itens dentro do cabeçalho e rodapé */
+  justify-content: flex-start; /* Alinha os itens ao início do contêiner (à esquerda) */
+  align-content: center; /* Alinha o conteúdo verticalmente ao centro do contêiner (não tem efeito neste contexto sem múltiplas linhas) */
+  align-items: center; /* Alinha os itens verticalmente ao centro do contêiner */
+}
+
+header img {
+  height: 50px; /* Define a altura da imagem no cabeçalho como 50 pixels */
+}
+
+.container {
+  width: 80%; /* Define a largura do contêiner como 80% da largura do elemento pai (geralmente o corpo da página) */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente na página */
+  padding: 20px; /* Adiciona 20 pixels de preenchimento ao redor do conteúdo dentro do contêiner */
+}
+
+label {
+  display: block; /* Faz com que o rótulo ocupe uma linha inteira, garantindo que o campo de entrada esteja abaixo dele */
+  margin-bottom: 5px; /* Adiciona uma margem inferior de 5 pixels abaixo dos rótulos */
+}
+
+input[type="email"],
+input[type="password"],
+textarea,
+input[type="file"],
+button {
+  width: 100%; /* Define a largura dos campos de entrada, área de texto e botão como 100% da largura do contêiner pai */
+  margin-bottom: 15px; /* Adiciona uma margem inferior de 15 pixels abaixo dos campos de entrada, área de texto e botão */
+  padding: 10px; /* Adiciona 10 pixels de preenchimento interno aos campos de entrada, área de texto e botão */
+  border: 1px solid #ccc; /* Define uma borda de 1 pixel sólida e cinza clara ao redor dos campos de entrada, área de texto e botão */
+  border-radius: 5px; /* Adiciona cantos arredondados com raio de 5 pixels aos campos de entrada, área de texto e botão */
+}
+
+button {
+  background-color: #DED398; /* Define a cor de fundo do botão como um tom de bege claro */
+  color: #fff; /* Define a cor do texto do botão como branco */
+  cursor: pointer; /* Altera o cursor para uma mãozinha ao passar sobre o botão */
+}
+
+button:hover {
+  background-color: #DED398; /* Mantém a mesma cor de fundo quando o botão é sobreposto pelo cursor (não há mudança visível) */
+}
+
+footer {
+  position: fixed; /* Fixar o rodapé na parte inferior da janela do navegador */
+  bottom: 0; /* Posiciona o rodapé na parte inferior do viewport */
+  width: 100%; /* Define a largura do rodapé como 100% da largura da janela do navegador */
+}

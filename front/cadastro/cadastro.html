@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="cadastro.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a escala e o tamanho da visualização para dispositivos móveis -->
+    <title>Cadastro</title> <!-- Define o título da página exibido na aba do navegador -->
+    <link rel="stylesheet" href="cadastro.css"> <!-- Link para o arquivo CSS que estiliza a página -->
 </head>
 <body>
     
     <header>
-        <img src="logo.png" alt="logotipo">
+        <img src="logo.png" alt="logotipo"> <!-- Imagem do logotipo no cabeçalho -->
     </header>
 
-            <div class="container">
-                <form action="#" method="post">
+    <div class="container">
+        <!-- Formulário para cadastro de usuário -->
+        <form action="#" method="post">
+            <!-- Campo de entrada para o nome do usuário -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
 
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
+            <!-- Campo de entrada para o email do usuário -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-        
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" required>
-        
-                    <button onclick="handleSubmit(event)">Cadastrar</button>
-                </form>
-            </div>
+            <!-- Campo de entrada para a senha do usuário -->
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
 
+            <!-- Botão de envio do formulário -->
+            <button onclick="handleSubmit(event)">Cadastrar</button>
         </form>
     </div>
 
     <footer>
+        <!-- Rodapé da página com copyright -->
         <p>&copy; 2024 AUDOTE</p>
     </footer>
     
-    <script src="cadastro.js"></script>
-
+    <script src="cadastro.js"></script> <!-- Link para o arquivo JavaScript que contém a lógica de manipulação do formulário -->
 </body>
 </html>

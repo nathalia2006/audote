@@ -1,42 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>animais disponíveis</title>
-    <link rel="stylesheet" href="animais_disponíveis.css">
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suportar a maioria dos caracteres internacionais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para otimizar a visualização em dispositivos móveis -->
+    <title>Animais Disponíveis</title> <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="animais_disponíveis.css"> <!-- Link para o arquivo CSS que estiliza a página -->
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="logotipo">
+        <img src="logo.png" alt="Logotipo"> <!-- Exibe o logotipo no cabeçalho da página -->
     </header>
     
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="#">
-    
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+    <div class="container"> <!-- Contêiner que centraliza e limita a largura do conteúdo -->
+        <div class="feed-list" id="animais"> <!-- Contêiner que agrupa todos os cartões de animais -->
+            <!-- Cada feed-card representa um animal disponível -->
+            <!--
+            <div class="feed-card"> 
+                <img src="cachorro1" alt="Cachorro 1"> 
+                <div class="info"> 
+                    <h2>Toby</h2> 
+                    <p>Cachorro caramelo de porte médio</p> 
+                    <p>Telefone: (51) 91234-5678</p> 
+                </div>
             </div>
-    
-            <div class="form-group">
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required>
+
+            <div class="feed-card">
+                <img src="cachorro2" alt="Cachorro 2">
+                <div class="info">
+                    <h2>Pingo</h2>
+                    <p>Cachorro preto com detalhes claros de pequeno porte</p>
+                    <p>Telefone: (51) 91234-5678</p>
+                </div>
             </div>
-    
-            <div class="form-group">
-                <button type="submit">Entrar</button>
+
+            <div class="feed-card">
+                <img src="gato1" alt="Gato 1">
+                <div class="info">
+                    <h2>Simba</h2>
+                    <p>Gato laranja, mansinho</p>
+                    <p>Telefone: (51) 91234-5678</p>
+                </div>
             </div>
-    
-        </form>
+
+            <div class="feed-card">
+                <img src="gato2" alt="Gato 2">
+                <div class="info">
+                    <h2>Fumaça</h2>
+                    <p>Gata siamês, um pouco brava</p>
+                    <p>Telefone: (51) 91234-5678</p>
+                </div>
+            </div>
+
+            <div class="feed-card">
+                <img src="cachorro3" alt="Cachorro 3">
+                <div class="info">
+                    <h2>Oliver</h2>
+                    <p>Cachorro peludinho porte médio</p>
+                    <p>Telefone: (51) 91234-5678</p>
+                </div>
+            </div>
+
+            <div class="feed-card">
+                <img src="gato3" alt="Gato 3">
+                <div class="info">
+                    <h2>Garfield</h2>
+                    <p>Gatinho filhote, precisa de atenção</p>
+                    <p>Telefone: (51) 91234-5678</p>
+                </div>
+            </div>
+
+            <div class="feed-card">
+                <img src="cachorro4" alt="Cachorro 4">
+                <div class="info">
+                    <h2>Charlie</h2>
+                    <p>Cachorro caramelo muito dócil</p>
+                    <p>Telefone: (51) 91234-5678</p>
+                </div>
+            </div>
+
+            <div class="feed-card">
+                <img src="gato4" alt="Gato 4">
+                <div class="info">
+                    <h2>Bella</h2>
+                    <p>Gatinha branquinha com machucado na patinha</p>
+                    <p>Telefone: (51) 91234-5678</p>
+                </div>
+            </div>
+
+            <div class="feed-card">
+                <img src="cachorro5" alt="Cachorro 5">
+                <div class="info">
+                    <h2>Pixel</h2>
+                    <p>Cachorro porte grande, gosta de brincar</p>
+                    <p>Telefone: (51) 91234-5678</p>
+                </div>
+            </div>
+
+            <div class="feed-card">
+                <img src="gato5" alt="Gato 5">
+                <div class="info">
+                    <h2>Eclipse</h2>
+                    <p>Gato preto mais velhinho, precisa de maiores cuidados</p>
+                    <p>Telefone: (51) 91234-5678</p>
+                </div>
+            </div>
+            -->
+        </div>
     </div>
     
     <footer>
-        <p>&copy; 2024 AUDOTE</p>
+        <p>&copy; 2024 AUDOTE</p> <!-- Informação de copyright no rodapé da página -->
     </footer>
-    
-    </body>
-    </html>
+
+    <script src="./animais_disponiveis.js"></script> <!-- Link para o arquivo JavaScript que adiciona funcionalidades à página -->
 </body>
 </html>

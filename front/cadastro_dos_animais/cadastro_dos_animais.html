@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro dos animais</title>
-    <link rel="stylesheet" href="cadastro_dos_animais.css">
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres para UTF-8, suportando caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis, garantindo responsividade -->
+    <title>Cadastro dos animais</title> <!-- Define o título da página, que aparece na aba do navegador -->
+    <link rel="stylesheet" href="cadastro_dos_animais.css"> <!-- Link para o arquivo CSS externo que estiliza a página de cadastro de animais -->
 </head>
 <body>
 
     <header>
-    <img src="logo.png" alt="logotipo">
+        <!-- Cabeçalho da página -->
+        <img src="logo.png" alt="logotipo"> <!-- Imagem do logotipo, exibida no cabeçalho -->
     </header>
         
-        <div class="container">
-            <form action="#" method="post">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+    <div class="container">
+        <!-- Contêiner principal para o formulário de cadastro de animais -->
+        <form action="#" method="post">
+            <!-- O atributo action está definido como "#" pois o formulário é manipulado pelo JavaScript e não será enviado diretamente -->
+            <label for="email">Email</label> <!-- Rótulo para o campo de entrada de email -->
+            <input type="email" id="email" name="email" required> <!-- Campo de entrada para email, que deve ser preenchido obrigatoriamente -->
         
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
+            <label for="senha">Senha:</label> <!-- Rótulo para o campo de entrada de senha -->
+            <input type="password" id="senha" name="senha" required> <!-- Campo de entrada para senha, que deve ser preenchido obrigatoriamente -->
         
-                <label for="descrição_animal">Descrição do Animal: (onde foi encontrado, idade aproximada, raça, porte, telefone para contato... )</label>
-                <textarea id="descrição_animal" name="descrição_animal" required></textarea>
+            <label for="descrição_animal">Descrição do Animal: (onde foi encontrado, idade aproximada, raça, porte, telefone para contato... )</label> <!-- Rótulo para a área de texto da descrição do animal -->
+            <textarea id="descricao_animal" name="descricao_animal" required></textarea> <!-- Área de texto para a descrição do animal, que deve ser preenchida obrigatoriamente -->
         
-                <label for="foto">Foto do Animal:</label>
-                <input type="file" id="foto" name="foto" accept="image/*" required>
+            <label for="foto">Foto do Animal:</label> <!-- Rótulo para o campo de upload de foto -->
+            <input type="file" id="foto" name="foto" accept="image/*" required> <!-- Campo de upload para a foto do animal, aceitando apenas arquivos de imagem e obrigatório -->
         
-                <button onclick="handleSubmit(event)">Cadastrar</button>
-            </form>
-        </div>
-        
+            <button onclick="handleSubmit(event)">Cadastrar</button> <!-- Botão para submeter o formulário, que chama a função JavaScript handleSubmit -->
+        </form>
+    </div>
 
     <footer>
-        <p>&copy; 2024 AUDOTE</p>
+        <!-- Rodapé da página -->
+        <p>&copy; 2024 AUDOTE</p> <!-- Texto de copyright com o ano atual e o nome da empresa ou projeto -->
     </footer>
 
-    <script src="cadastro_dos_animais.js"></script>
+    <script src="cadastro_dos_animais.js"></script> <!-- Link para o arquivo JavaScript externo que contém a lógica do formulário de cadastro de animais -->
         
 </body>
 </html>
