@@ -21,6 +21,7 @@ async function getAnimais() {
                         <h2>Fumaça</h2>
                         <p>${animal.descricao_animal}</p>
                         <p>Telefone: (51) 91234-5678</p>
+                        
                     </div>
                 </div>
             `;

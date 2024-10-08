@@ -29,6 +29,7 @@ async function handleSubmit(event) {
     // Verifica o conteúdo da resposta para saber se a operação foi bem-sucedida
     if (content.success) {
       alert("Cadastro feito com sucesso!");  // Exibe uma mensagem de sucesso para o usuário
+      window.location.href = "../animais_disponíveis/animais_disponíveis.html"
     } else {
       alert("Dados não enviados!");  // Exibe uma mensagem de erro se a resposta indicar falha
     }

@@ -13,6 +13,22 @@ const { storeCadastroAnimais } = require('../controller/cadastroAnimaisControlle
 //   res.send('Arquivo enviado com sucesso!');
 // };
 
+/**
+ * @swagger
+ * /tasks/register:
+ *  post:
+ *    summary: Cadastra uma nova tarefa
+ *    responses:
+ *      200:
+ *        description: Sucesso!
+ *        content:
+ *          application/json:
+ *            schema:
+ *              type: array
+ *              items:
+ *                type: object
+ */
+
 // Define uma rota POST para o endpoint "/cadastroAnimais"
 // `upload.single('foto')` lida com o upload do arquivo com o campo de nome 'foto'
 router.post('/cadastroAnimais', upload.single('foto'), storeCadastroAnimais);
