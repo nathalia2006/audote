@@ -21,15 +21,19 @@ async function getAnimais() {
                         <h2>Fumaça</h2>
                         <p>${animal.descricao_animal}</p>
                         <p>Telefone: (51) 91234-5678</p>
-                        
+                        <button class="delete-button" onclick="deleteAnimais(event)">Excluir</button>
                     </div>
                 </div>
             `;
-
+            // inserir os botões de editar (chamando a função de UPDATE abaixo) e o botão de deletar chamando a função de delete
+            // exemplo de botão que chama função <button onclick="nomeFunção(event)">Editar ou Deletar</button>
             cardAnimais.innerHTML += cardFeed;
         });
 
     }
 }
+
+//criar função PUT (provavelmente também criar uma função no controller que use UPDATE no banco)
+//criar função DELETE
 
 getAnimais();
