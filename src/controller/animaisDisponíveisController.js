@@ -44,7 +44,48 @@ async function deleteAnimais(request, response) {
     });
 }
 
+async function editarAnimais(request, response) {
+    const animaisId = request.params.id; // Obtém o ID do animal a partir dos parâmetros da requisição
+    const { email, senha, nome_animal, telefone_animal, descricao_animal, foto_animal } = request.body; // Desestrutura os dados do corpo da requisição
+
+    // Monta a query de atualização
+    const query = `
+        UPDATE cadastro_animais 
+        SET 
+            email = ?, 
+            senha = ?, 
+            nome_animal = ?, 
+            telefone_animal = ?, 
+            descricao_animal = ?, 
+            foto_animal = ? 
+        WHERE id = ?`;
+
+    const params = [email, senha, nome_animal, telefone_animal, descricao_animal, foto_animal, animaisId];
+
+    connection.query(query, params, (err, results) => {
+        if (err) {
+            console.error(err);
+            response.status(400).json({
+                success: false,
+                message: "Erro ao editar o animal",
+                data: err
+            });
+        } else if (results.affectedRows > 0) {
+            response.status(200).json({
+                success: true,
+                message: "Animal editado com sucesso!"
+            });
+        } else {
+            response.status(404).json({
+                success: false,
+                message: "Animal não encontrado!"
+            });
+        }
+    });
+}
+
 module.exports = {
     listarAnimais,
-    deleteAnimais
-}
+    deleteAnimais,
+    editarAnimais
+};

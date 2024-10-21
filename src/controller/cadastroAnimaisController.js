@@ -11,6 +11,8 @@ async function storeCadastroAnimais(request, response) {
     const params = [
         request.body.email,           // Email do usuário
         request.body.senha,           // Senha do usuário
+        request.body.nome_animal,     
+        request.body.telefone_animal,  
         request.body.descricao_animal, // Descrição do animal
         request.file.filename         // Nome do arquivo da foto do animal
     ];
@@ -18,7 +20,7 @@ async function storeCadastroAnimais(request, response) {
     console.log(params)
     
     // Comando SQL para inserir dados na tabela cadastro_animais
-    const query = "INSERT INTO cadastro_animais(email, senha, descricao_animal, foto_animal) VALUES(?, ?, ?, ?)";
+    const query = "INSERT INTO cadastro_animais(email, senha, nome_animal, telefone_animal, descricao_animal, foto_animal) VALUES(?, ?, ?, ?, ?, ?)";
 
     // Executa a query no banco de dados
     connection.query(query, params, (err, results) => {

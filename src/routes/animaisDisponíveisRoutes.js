@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { listarAnimais, deleteAnimais } = require('../controller/animaisDisponíveisController');
+const { listarAnimais, deleteAnimais, editarAnimais } = require('../controller/animaisDisponíveisController');
 
 /**
  * @swagger
@@ -41,6 +41,8 @@ router.get('/animais/listar', listarAnimais);
  */
 router.delete('/delete/animais/:id', deleteAnimais);
 
+
+router.put('/animais/editar/:id', editarAnimais);
 //criar rota pro put e delete
 
 // Exporta o roteador para ser usado em outros arquivos
