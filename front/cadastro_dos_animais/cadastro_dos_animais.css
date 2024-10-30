@@ -31,6 +31,8 @@ label {
 
 input[type="email"],
 input[type="password"],
+input[type="nome_animal"],
+input[type="telefone_animal"],
 textarea,
 input[type="file"],
 button {

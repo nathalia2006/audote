@@ -8,9 +8,12 @@ async function handleSubmit(event) {
   // Adiciona os valores dos campos de entrada ao objeto FormData
   formData.append('email', document.getElementById("email").value);  // Adiciona o valor do campo de email
   formData.append('senha', document.getElementById("senha").value);  // Adiciona o valor do campo de senha
+  formData.append('nome_animal', document.getElementById("nome_animal").value);
+  formData.append('telefone_animal', document.getElementById("telefone_animal").value); 
   formData.append('descricao_animal', document.getElementById("descricao_animal").value);  // Adiciona o valor do campo de descrição do animal
   formData.append('foto', document.getElementById("foto").files[0]);  // Adiciona o arquivo selecionado no campo de upload de foto
 
+  
   try {
     // Faz uma requisição HTTP POST para o endpoint '/api/cadastroAnimais'
     const response = await fetch('http://localhost:3005/api/cadastroAnimais', {
@@ -29,7 +32,7 @@ async function handleSubmit(event) {
     // Verifica o conteúdo da resposta para saber se a operação foi bem-sucedida
     if (content.success) {
       alert("Cadastro feito com sucesso!");  // Exibe uma mensagem de sucesso para o usuário
-      window.location.href = "../animais_disponíveis/animais_disponíveis.html"
+      window.location.href = "../animais_disponiveis/animais_disponiveis.html"
     } else {
       alert("Dados não enviados!");  // Exibe uma mensagem de erro se a resposta indicar falha
     }
