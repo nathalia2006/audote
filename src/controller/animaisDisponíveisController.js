@@ -46,21 +46,18 @@ async function deleteAnimais(request, response) {
 
 async function editarAnimais(request, response) {
     const animaisId = request.params.id; // Obtém o ID do animal a partir dos parâmetros da requisição
-    const { email, senha, nome_animal, telefone_animal, descricao_animal, foto_animal } = request.body; // Desestrutura os dados do corpo da requisição
+    const { nome_animal, telefone_animal, descricao_animal } = request.body; // Desestrutura os dados do corpo da requisição
 
     // Monta a query de atualização
     const query = `
         UPDATE cadastro_animais 
         SET 
-            email = ?, 
-            senha = ?, 
             nome_animal = ?, 
             telefone_animal = ?, 
-            descricao_animal = ?, 
-            foto_animal = ? 
+            descricao_animal = ?
         WHERE id = ?`;
 
-    const params = [email, senha, nome_animal, telefone_animal, descricao_animal, foto_animal, animaisId];
+    const params = [nome_animal, telefone_animal, descricao_animal, animaisId];
 
     connection.query(query, params, (err, results) => {
         if (err) {
