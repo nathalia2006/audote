@@ -12,23 +12,43 @@ async function getAnimais() {
         let cardAnimais = document.getElementById('animais');
         let animais = results.data;
         let imagens = "http://localhost:3005/uploads/";
+        
+        let usuario = JSON.parse(localStorage.getItem('@account_logged'))
+        console.log(usuario[0].email); 
 
         animais.forEach(animal => {
-            let cardFeed = `
-                <div class="feed-card">
-                    <img src="${imagens + animal.foto_animal}" alt="imagem">
-                    <div class="info">
-                        <h2>${animal.nome_animal}</h2>
-                        <p>${animal.descricao_animal}</p>
-                        <p>Telefone: ${animal.telefone_animal}</p>
-                        <button class="delete-button" data-id="${animal.id}" onclick="deleteAnimais(event)">Excluir</button>
-                        <button class="edit-button" data-id="${animal.id}" onclick="editarAnimais(event)">Editar</button>
+            console.log(animal.email);
+            if(animal.email == usuario[0].email){
+                let cardFeed = `
+                    <div class="feed-card">
+                        <img src="${imagens + animal.foto_animal}" alt="imagem">
+                        <div class="info">
+                            <h2>${animal.nome_animal}</h2>
+                            <p>${animal.descricao_animal}</p>
+                            <p>Telefone: ${animal.telefone_animal}</p>
+                            <button class="delete-button" data-id="${animal.id}" onclick="deleteAnimais(event)">Excluir</button>
+                            <button class="edit-button" data-id="${animal.id}" onclick="editarAnimais(event)">Editar</button>
+                        </div>
                     </div>
-                </div>
-            `;
-            cardAnimais.innerHTML += cardFeed;
+                `;
+                cardAnimais.innerHTML += cardFeed;
+            } else {
+                let cardFeed = `
+                    <div class="feed-card">
+                        <img src="${imagens + animal.foto_animal}" alt="imagem">
+                        <div class="info">
+                            <h2>${animal.nome_animal}</h2>
+                            <p>${animal.descricao_animal}</p>
+                            <p>Telefone: ${animal.telefone_animal}</p>
+                            </div>
+                    </div>
+                `;
+                cardAnimais.innerHTML += cardFeed;
+            }
+            
         });
     }
+     //usuario[0].email é o email do usuario logado nesta sessão
 }
 
 async function deleteAnimais(event) {
@@ -86,3 +106,10 @@ async function editarAnimais(event) {
 
 
 getAnimais();
+
+
+const BotaoCadastrar = document.getElementById('.BotaoCadastrar');
+
+BotaoCadastrar.onclick = function(){
+    window.location.href = '../cadastro_dos_animais/cadastro_dos_animais.html'
+}

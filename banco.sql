@@ -20,10 +20,11 @@ CREATE TABLE cadastro_animais(
     descricao_animal TEXT NOT NULL,
     foto_animal TEXT NOT NULL
 );
+
 select * from usuario;
 
 select * from cadastro_animais;
 
--- cadastro teste:
+-- Cadastro teste:
 
 INSERT INTO cadastro_animais(email, senha, nome_animal, telefone_animal, descricao_animal, foto_animal) VALUES('nathi.orso09@gmail.com', '123', 'teste', '51 99999999', 'cachorra', '1730327692613_images.jpg');

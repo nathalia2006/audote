@@ -1,79 +1,173 @@
 /* Estilo geral do corpo da página */
 body {
-    font-family: Arial, sans-serif; /* Define a fonte padrão para Arial ou uma fonte sans-serif alternativa */
-    background-color: #FFFAE2; /* Define a cor de fundo da página */
-    margin: 0; /* Remove a margem padrão do navegador */
-    padding: 0; /* Remove o preenchimento padrão do navegador */
+    font-family: Arial, sans-serif;
+    /* Define a fonte padrão para Arial ou uma fonte sans-serif alternativa */
+    background-color: #FFFAE2;
+    /* Define a cor de fundo da página */
+    margin: 0;
+    /* Remove a margem padrão do navegador */
+    padding: 0;
+    /* Remove o preenchimento padrão do navegador */
 }
 
 /* Estilo para a imagem do cabeçalho */
 header img {
-    height: 50px; /* Define a altura da imagem do cabeçalho */
+    height: 50px;
+    /* Define a altura da imagem do cabeçalho */
 }
 
 /* Estilo para o cabeçalho e o rodapé */
-header, footer {
-    background-color: #DED398; /* Define a cor de fundo para o cabeçalho e o rodapé */
-    height: 7rem; /* Define a altura do cabeçalho e do rodapé */
-    display: flex; /* Usa flexbox para layout */
-    justify-content: flex-start; /* Alinha os itens ao início do contêiner */
-    align-content: center; /* Alinha o conteúdo ao centro do contêiner (verticalmente) */
-    align-items: center; /* Alinha os itens ao centro do contêiner (horizontalmente) */
+header,
+footer {
+    background-color: #DED398;
+    /* Define a cor de fundo para o cabeçalho e o rodapé */
+    height: 7rem;
+    /* Define a altura do cabeçalho e do rodapé */
+    display: flex;
+    /* Usa flexbox para layout */
+    justify-content: flex-start;
+    /* Alinha os itens ao início do contêiner */
+    align-content: center;
+    /* Alinha o conteúdo ao centro do contêiner (verticalmente) */
+    align-items: center;
+    /* Alinha os itens ao centro do contêiner (horizontalmente) */
 }
 
 /* Estilo para a lista de cartões de animais */
 .feed-list {
-    display: flex; /* Usa flexbox para layout */
-    flex-wrap: wrap; /* Permite que os cartões quebrem a linha quando necessário */
-    justify-content: center; /* Alinha os cartões ao centro do contêiner */
-    padding: 20px; /* Adiciona um preenchimento ao redor dos cartões */
+    display: flex;
+    /* Usa flexbox para layout */
+    flex-wrap: wrap;
+    /* Permite que os cartões quebrem a linha quando necessário */
+    justify-content: center;
+    /* Alinha os cartões ao centro do contêiner */
+    padding: 20px;
+    /* Adiciona um preenchimento ao redor dos cartões */
 }
 
 /* Estilo para cada cartão de animal */
 .feed-card {
-    margin: 20px; /* Adiciona uma margem ao redor de cada cartão */
-    width: 300px; /* Define a largura de cada cartão */
-    border: 1px solid #ddd; /* Adiciona uma borda cinza clara ao redor do cartão */
-    border-radius: 10px; /* Arredonda os cantos do cartão */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao redor do cartão */
-    transition: transform 0.2s ease; /* Adiciona uma transição suave para a transformação do cartão */
+    margin: 20px;
+    /* Adiciona uma margem ao redor de cada cartão */
+    width: 300px;
+    /* Define a largura de cada cartão */
+    border: 1px solid #ddd;
+    /* Adiciona uma borda cinza clara ao redor do cartão */
+    border-radius: 10px;
+    /* Arredonda os cantos do cartão */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra leve ao redor do cartão */
+    transition: transform 0.2s ease;
+    /* Adiciona uma transição suave para a transformação do cartão */
 }
 
 /* Estilo para o cartão quando o mouse passa sobre ele */
 .feed-card:hover {
-    transform: translateY(-5px); /* Levanta o cartão um pouco para cima ao passar o mouse */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para destacar o cartão */
+    transform: translateY(-5px);
+    /* Levanta o cartão um pouco para cima ao passar o mouse */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* Aumenta a sombra para destacar o cartão */
 }
 
 /* Estilo para a imagem dentro do cartão */
 .feed-card img {
-    width: 100%; /* Faz com que a imagem ocupe toda a largura do cartão */
-    height: 150px; /* Define a altura fixa da imagem */
-    object-fit: cover; /* Faz com que a imagem cubra o espaço sem distorção */
-    border-top-left-radius: 10px; /* Arredonda o canto superior esquerdo da imagem */
-    border-top-right-radius: 10px; /* Arredonda o canto superior direito da imagem */
+    width: 100%;
+    /* Faz com que a imagem ocupe toda a largura do cartão */
+    height: 150px;
+    /* Define a altura fixa da imagem */
+    object-fit: cover;
+    /* Faz com que a imagem cubra o espaço sem distorção */
+    border-top-left-radius: 10px;
+    /* Arredonda o canto superior esquerdo da imagem */
+    border-top-right-radius: 10px;
+    /* Arredonda o canto superior direito da imagem */
 }
 
 /* Estilo para a seção de informações dentro do cartão */
 .feed-card .info {
-    padding: 20px; /* Adiciona um preenchimento ao redor do conteúdo de informações */
+    padding: 20px;
+    /* Adiciona um preenchimento ao redor do conteúdo de informações */
 }
 
 /* Estilo para o título dentro do cartão */
 .feed-card h2 {
-    font-size: 18px; /* Define o tamanho da fonte para o título */
-    margin-bottom: 10px; /* Adiciona uma margem inferior ao título */
+    font-size: 18px;
+    /* Define o tamanho da fonte para o título */
+    margin-bottom: 10px;
+    /* Adiciona uma margem inferior ao título */
 }
 
 /* Estilo para os parágrafos dentro do cartão */
 .feed-card p {
-    font-size: 14px; /* Define o tamanho da fonte para os parágrafos */
-    color: #666; /* Define a cor do texto para um cinza escuro */
+    font-size: 14px;
+    /* Define o tamanho da fonte para os parágrafos */
+    color: #666;
+    /* Define a cor do texto para um cinza escuro */
 }
 
 /* Estilo para o rodapé */
 footer {
-    position: fixed; /* Fixação do rodapé no fundo da página */
-    bottom: 0; /* Posiciona o rodapé no fundo da página */
-    width: 100%; /* Faz com que o rodapé ocupe toda a largura da página */
+    position: fixed;
+    /* Fixação do rodapé no fundo da página */
+    bottom: 0;
+    /* Posiciona o rodapé no fundo da página */
+    width: 100%;
+    /* Faz com que o rodapé ocupe toda a largura da página */
+}
+
+button {
+    background-color: #DED398;
+    /* Define a cor de fundo do botão como um tom de bege claro */
+    color: #000;
+    /* Define a cor do texto do botão como branco */
+    cursor: pointer;
+    /* Altera o cursor para uma mãozinha ao passar sobre o botão */
+}
+
+
+
+  
+
+.botaoCadastro {
+    width: 100%; /* Define a largura dos campos de entrada, área de texto e botão como 100% da largura do contêiner pai */
+    padding: 10px; /* Adiciona 10 pixels de preenchimento interno aos campos de entrada, área de texto e botão */
+    border: 1px solid #ccc; /* Define uma borda de 1 pixel sólida e cinza clara ao redor dos campos de entrada, área de texto e botão */
+    border-radius: 5px; /* Adiciona cantos arredondados com raio de 5 pixels aos campos de entrada, área de texto e botão */
+    background-color: #DED398; /* Define a cor de fundo do botão como um tom de bege claro */
+    color: #fff; /* Define a cor do texto do botão como branco */
+    cursor: pointer; /* Altera o cursor para uma mãozinha ao passar sobre o botão */
+}
+
+#BotaoCadastrar{
+    display: flex;
+    background-color: #fff; /* Define a cor de fundo do botão como um tom de bege claro */
+    color: #ded398; /* Define a cor do texto do botão como branco */
+    cursor: pointer; /* Altera o cursor para uma mãozinha ao passar sobre o botão */
+    width: 10%;
+    height: 30%;
+    justify-content: center;
+
+}
+
+button:hover {
+    background-color: #DED398; /* Mantém a mesma cor de fundo quando o botão é sobreposto pelo cursor (não há mudança visível) */
+}
+  
+footer {
+    position: fixed; /* Fixar o rodapé na parte inferior da janela do navegador */
+    bottom: 0; /* Posiciona o rodapé na parte inferior do viewport */
+}
+  
+
+
+
+
+button:hover {
+    background-color: #524e36;
+    /* Mantém a mesma cor de fundo quando o botão é sobreposto pelo cursor (não há mudança visível) */
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
 }
