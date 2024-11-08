@@ -107,11 +107,11 @@ footer {
 
 /* Estilo para o rodapé */
 footer {
-    position: fixed;
-    /* Fixação do rodapé no fundo da página */
+    
     bottom: 0;
     /* Posiciona o rodapé no fundo da página */
     width: 100%;
+
     /* Faz com que o rodapé ocupe toda a largura da página */
 }
 
@@ -124,10 +124,6 @@ button {
     /* Altera o cursor para uma mãozinha ao passar sobre o botão */
 }
 
-
-
-  
-
 .botaoCadastro {
     width: 100%; /* Define a largura dos campos de entrada, área de texto e botão como 100% da largura do contêiner pai */
     padding: 10px; /* Adiciona 10 pixels de preenchimento interno aos campos de entrada, área de texto e botão */
@@ -138,36 +134,37 @@ button {
     cursor: pointer; /* Altera o cursor para uma mãozinha ao passar sobre o botão */
 }
 
-#BotaoCadastrar{
-    display: flex;
-    background-color: #fff; /* Define a cor de fundo do botão como um tom de bege claro */
-    color: #ded398; /* Define a cor do texto do botão como branco */
-    cursor: pointer; /* Altera o cursor para uma mãozinha ao passar sobre o botão */
-    width: 10%;
-    height: 30%;
-    justify-content: center;
-
-}
-
 button:hover {
     background-color: #DED398; /* Mantém a mesma cor de fundo quando o botão é sobreposto pelo cursor (não há mudança visível) */
 }
   
 footer {
-    position: fixed; /* Fixar o rodapé na parte inferior da janela do navegador */
     bottom: 0; /* Posiciona o rodapé na parte inferior do viewport */
 }
-  
-
-
-
 
 button:hover {
     background-color: #524e36;
     /* Mantém a mesma cor de fundo quando o botão é sobreposto pelo cursor (não há mudança visível) */
 }
 
-footer{
+#BotaoCadastrar{
+    color: #b9b07e;
+    border: none;
+    background-color: #FFFAE2;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    justify-content: center;
+    text-decoration: none;
+    margin-left: 30px;
+    align-items: center;
     display: flex;
-    justify-content: space-between;
+    margin: 600px;
+}
+
+.container {
+    min-height: 100vh;
 }
