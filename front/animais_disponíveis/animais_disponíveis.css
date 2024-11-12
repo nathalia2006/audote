@@ -147,24 +147,26 @@ button:hover {
     /* Mantém a mesma cor de fundo quando o botão é sobreposto pelo cursor (não há mudança visível) */
 }
 
-#BotaoCadastrar{
-    color: #b9b07e;
-    border: none;
-    background-color: #FFFAE2;
-    border-radius: 5px;
-    width: 250px;
-    height: 30px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    justify-content: center;
-    text-decoration: none;
-    margin-left: 30px;
-    align-items: center;
-    display: flex;
-    margin: 600px;
+/* Estilos para o botão de cadastro */
+#BotaoCadastrar {
+    color: #b9b07e;             /* Define a cor do texto como bege */
+    border: none;               /* Remove a borda do botão */
+    background-color: #FFFAE2;  /* Define a cor de fundo como amarelo claro */
+    border-radius: 5px;         /* Arredonda as bordas do botão */
+    width: 250px;               /* Define a largura do botão */
+    height: 30px;               /* Define a altura do botão */
+    font-size: 20px;            /* Define o tamanho da fonte */
+    font-weight: bold;          /* Define o peso da fonte como negrito */
+    cursor: pointer;            /* Altera o cursor para 'pointer' ao passar sobre o botão */
+    justify-content: center;    /* Centraliza o conteúdo horizontalmente */
+    text-decoration: none;      /* Remove qualquer decoração de texto */
+    margin-left: 30px;          /* Adiciona margem esquerda de 30px */
+    align-items: center;        /* Centraliza o conteúdo verticalmente */
+    display: flex;              /* Define o botão como um contêiner flexível */
+    margin: 700px;              /* Adiciona margem de 700px em todas as direções */
 }
 
+/* Estilos para o contêiner */
 .container {
-    min-height: 100vh;
+    min-height: 100vh;          /* Define a altura mínima do contêiner como 100% da tela */
 }

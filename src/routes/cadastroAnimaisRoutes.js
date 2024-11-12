@@ -1,9 +1,9 @@
 // Importa os módulos necessários
 const express = require('express');
 const router = express.Router();
-const upload = require('../config/multer');
+const upload = require('../config/multer');  // Importa a configuração do multer para fazer o upload de arquivos
 
-//Importar constrollers
+// Importa o controlador de cadastro de animais
 const { storeCadastroAnimais } = require('../controller/cadastroAnimaisController');
 
 // Função de controlador para lidar com o upload e outras lógicas de processamento
@@ -29,8 +29,8 @@ const { storeCadastroAnimais } = require('../controller/cadastroAnimaisControlle
  *                type: object
  */
 
-// Define uma rota POST para o endpoint "/cadastroAnimais"
-// `upload.single('foto')` lida com o upload do arquivo com o campo de nome 'foto'
+// Define uma rota POST para o endpoint "/cadastroAnimais" que chama a função storeCadastroAnimais
+// A função upload.single('foto') lida com o upload de um único arquivo enviado com o campo de nome 'foto'
 router.post('/cadastroAnimais', upload.single('foto'), storeCadastroAnimais);
 
 // Exporta o roteador para uso em outros arquivos
